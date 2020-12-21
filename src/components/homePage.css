@@ -1,0 +1,23 @@
+:root {
+  --level3: #1f1f1f;
+  --level2: #161616;
+  --level1: #0a0a0a;
+  --shadow: #030303;
+  --shadowSize: 2px;
+  --letter3: #ffffff;
+  --letter2: #d8d8d8;
+  --letter1: #929292;
+  --letter0: #343544;
+}
+
+.intro {
+  /* margin-top: 100px; */
+  height: 700px;
+  width: 100%;
+  background-image: url(https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/67580037_2558624430836493_818324787536330752_o.jpg?_nc_cat=111&ccb=2&_nc_sid=730e14&_nc_ohc=7nsGSZBw1NcAX-32Iey&_nc_ht=scontent-arn2-1.xx&oh=0e1110bf570dc969a3f4e3b42926c162&oe=60045BB3);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  z-index: -999;
+}
