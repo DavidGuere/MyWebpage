@@ -1,6 +1,9 @@
 :root {
-  --mainColor: #0e0e0e;
-  background-color: #0e0d0d;
+  --level4: #202020;
+  --level3: #181818;
+  --level2: #0e0e0e;
+  --level1: #0c0c0c;
+  background-color: rgb(9, 9, 9);
 }
 
 * {
@@ -20,30 +23,3 @@
   justify-content: center;
   font-size: 3rem;
 }
-
-/* .services {
-  background-image: url("/images/img-2.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.products {
-  background-image: url("/images/img-1.jpg");
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.sign-up {
-  background-image: url("/images/img-8.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-} */

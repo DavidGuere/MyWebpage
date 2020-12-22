@@ -1,6 +1,7 @@
 :root {
-  --level3: #1f1f1f;
-  --level2: #161616;
+  --level4: #202020;
+  --level3: #181818;
+  --level2: #141414;
   --level1: #0a0a0a;
   --shadow: #030303;
   --shadowSize: 2px;
@@ -26,7 +27,7 @@
 /* } */
 
 .navbar-container {
-  background-color: var(--level3);
+  background-color: var(--level4);
   /* display: flex; */
   height: 70px;
   font-size: 1.2rem;
@@ -39,13 +40,19 @@
 }
 
 .navbar-container-item {
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .logo {
+  top: 4px;
   position: absolute;
-  left: 0%;
+  left: 2%;
   transition: all 1s ease;
+}
+
+img {
+  width: 190px;
+  object-fit: cover;
 }
 
 .nav-menu {
@@ -60,6 +67,7 @@
   right: 0%;
   transition: top 1s ease;
   transition-delay: 0.2s;
+  padding: 20px;
 }
 
 .nav-links {
@@ -168,17 +176,19 @@
     font-size: 1.8rem;
     cursor: pointer;
     color: var(--letter1);
-    top: 0%;
-    right: 0%;
+    top: 50%;
+    right: 3%;
+    transform: translate(0, -50%);
     transition: top 1s ease;
     transition-delay: 0.2s;
   }
 
   .menu-icon:hover {
+    transform: translate(0, -50%) scale(1.1);
     color: var(--letter3);
   }
   .nav-menu-phone {
-    background-color: var(--level2);
+    background-color: var(--level3);
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -192,7 +202,8 @@
   .logo {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    margin: auto;
+    transform: translate(-50%);
     transition: all 1s ease;
   }
 
@@ -212,6 +223,7 @@
 
   .nav-menu-phone.active {
     top: 70px;
+    position: fixed;
     transition: all 1s ease;
     box-shadow: 0px 0px 10px var(--shadowSize) var(--shadow);
   }

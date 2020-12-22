@@ -1,12 +1,12 @@
 // Starts with rfce
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Button from "./Button";
+// import Button from "./Button";
 import "./NavBar.css";
 
 function NavBar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  // const [button, setButton] = useState(true);
 
   function handleClick() {
     // toggles click true/false
@@ -17,9 +17,9 @@ function NavBar() {
   }
   function showButton() {
     if (window.innerWidth <= 960) {
-      setButton(false);
+      // setButton(false);
     } else {
-      setButton(true);
+      // setButton(true);
     }
   }
 
@@ -38,7 +38,7 @@ function NavBar() {
           to="/"
           onClick={closeMobilMenu}
         >
-          David
+          <img src="images/GG_logo_blanco.png" alt="" />
         </Link>
         <div className="navbar-container-item menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"}></i>

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // pages
 import HomePage from "./components/homePage";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <HomePage />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </React.Fragment>
   );
