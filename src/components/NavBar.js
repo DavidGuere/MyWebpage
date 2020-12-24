@@ -31,54 +31,65 @@ function NavBar() {
 
   return (
     <React.Fragment>
-      {/* <nav className="navbar"> */}
-      <div className="navbar-container">
-        <Link
-          className="navbar-container-item logo"
-          to="/"
-          onClick={closeMobilMenu}
-        >
-          <img src="images/GG_logo_blanco.png" alt="" />
-        </Link>
-        <div className="navbar-container-item menu-icon" onClick={handleClick}>
-          <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
+      <nav>
+        <div className="navbar-container">
+          <Link
+            className="navbar-container-item logo"
+            to="/"
+            onClick={closeMobilMenu}
+          >
+            <img src="images/GG_logo_blanco.png" alt="" />
+          </Link>
+          <div
+            className="navbar-container-item menu-icon"
+            onClick={handleClick}
+          >
+            <i class={click ? "fas fa-times" : "fas fa-bars"}></i>
+          </div>
+          <ul className="navbar-container-item nav-menu">
+            <li className="nav-menu-item">
+              <Link to="/" className="nav-links" onClick={closeMobilMenu}>
+                Home
+              </Link>
+            </li>
+            <li className="nav-menu-item">
+              <Link to="/about" className="nav-links" onClick={closeMobilMenu}>
+                About me
+              </Link>
+            </li>
+            <li className="nav-menu-item">
+              <Link
+                to="/Photography"
+                className="nav-links"
+                onClick={closeMobilMenu}
+              >
+                Photography
+              </Link>
+            </li>
+          </ul>
         </div>
-        <ul className="navbar-container-item nav-menu">
-          <li className="nav-menu-item">
+        <ul className={click ? "nav-menu-phone active" : "nav-menu-phone"}>
+          <li className="nav-menu-phone-item">
             <Link to="/" className="nav-links" onClick={closeMobilMenu}>
               Home
             </Link>
           </li>
-          <li className="nav-menu-item">
+          <li className="nav-menu-phone-item">
             <Link to="/about" className="nav-links" onClick={closeMobilMenu}>
               About me
             </Link>
           </li>
-          <li className="nav-menu-item">
-            <Link to="/photo" className="nav-links" onClick={closeMobilMenu}>
+          <li className="nav-menu-phone-item">
+            <Link
+              to="/Photography"
+              className="nav-links"
+              onClick={closeMobilMenu}
+            >
               Photography
             </Link>
           </li>
         </ul>
-      </div>
-      <ul className={click ? "nav-menu-phone active" : "nav-menu-phone"}>
-        <li className="nav-menu-phone-item">
-          <Link to="/" className="nav-links" onClick={closeMobilMenu}>
-            Home
-          </Link>
-        </li>
-        <li className="nav-menu-phone-item">
-          <Link to="/about" className="nav-links" onClick={closeMobilMenu}>
-            About me
-          </Link>
-        </li>
-        <li className="nav-menu-phone-item">
-          <Link to="/photo" className="nav-links" onClick={closeMobilMenu}>
-            Photography
-          </Link>
-        </li>
-      </ul>
-      {/* </nav> */}
+      </nav>
     </React.Fragment>
   );
 }

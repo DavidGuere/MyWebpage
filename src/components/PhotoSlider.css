@@ -1,0 +1,55 @@
+:root {
+  --level4: #202020;
+  --level3: #181818;
+  --level2: #0e0e0e;
+  --level1: #0f0f0f;
+  --shadow: #030303;
+  --shadowSize: 2px;
+  --letter3: #ffffff;
+  --letter2: #d8d8d8;
+  --letter1: #929292;
+  --letter0: rgb(85, 85, 85);
+  --marginSide: 5%;
+  --marginTopBot: 2%;
+}
+
+.photoSlider {
+  position: relative;
+  top: 800px;
+  margin-bottom: 100px;
+  border: 3px solid red;
+  height: 550px;
+}
+
+.arrowContainer {
+  position: absolute;
+  border: 2px solid yellow;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.next {
+  right: 0;
+}
+.arrow {
+  transform: scale(4);
+  color: aqua;
+  cursor: pointer;
+  margin: 1.5em;
+}
+
+.slider > img {
+  border: 2px solid white;
+  max-height: 550px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.videoSlide {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  min-height: 500px;
+  height: 100%;
+  border: 2px solid red;
+}

@@ -21,7 +21,7 @@ function ImageButton(prop) {
   return (
     <div className="content-item" onClick={() => history.push(link)}>
       <div id={idVidContainer} className="content-item-vc">
-        <video id={idVid} src={src} loop muted></video>
+        <video className="videoButton" id={idVid} src={src} loop muted></video>
         <h2 className="content-item-text">{`${text}`}</h2>
       </div>
     </div>

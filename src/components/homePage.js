@@ -7,11 +7,11 @@ function HomePage() {
     <React.Fragment>
       <div className="intro">
         <div className="intro-presentation">
-          <div className="intro-presentation-item name">
+          <div className="name">
             <h1>David Güere</h1>
           </div>
-          <div className="intro-presentation-item line"></div>
-          <ul className="intro-presentation-item positions">
+          <div className="line"></div>
+          <ul className="positions">
             <li>Energy engineer</li>
             <li>Nuclear engineer</li>
             <li>Web developer</li>
@@ -57,7 +57,7 @@ function HomePage() {
           text="Photography"
           videoContainer="videoContainer2"
           video="video2"
-          link="/photo"
+          link="/Photography"
         />
       </div>
     </React.Fragment>
