@@ -7,7 +7,7 @@ function PhotoHead() {
       <div className="photoHead-wrap">
         <video
           className="slideShow"
-          src="/videos/photoslide.mp4"
+          src="https://raw.githubusercontent.com/DavidGuere/degg/gh-pages/videos/photoslide.mp4"
           autoPlay
           loop
           muted

@@ -35,7 +35,7 @@ function HomePage() {
           </div>
           <img
             className="about-container-item picture"
-            src="/images/me.jpg"
+            src="https://github.com/DavidGuere/degg/blob/gh-pages/images/me.jpg?raw=true"
             alt=""
           />
         </div>
@@ -44,7 +44,7 @@ function HomePage() {
         <ImageButton
           idVidContainer="c1"
           idVid="v1"
-          src="/videos/engineering.mp4"
+          src="https://raw.githubusercontent.com/DavidGuere/degg/gh-pages/videos/engineering.mp4"
           text="Engineering"
           videoContainer="videoContainer1"
           video="video1"
@@ -53,7 +53,7 @@ function HomePage() {
         <ImageButton
           idVidContainer="c2"
           idVid="v2"
-          src="/videos/photo.mp4"
+          src="https://raw.githubusercontent.com/DavidGuere/degg/gh-pages/videos/photo.mp4"
           text="Photography"
           videoContainer="videoContainer2"
           video="video2"
