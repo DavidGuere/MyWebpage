@@ -21,8 +21,8 @@ function PhotoSlider(prop) {
   console.log(`pic ${pic}`);
 
   function prevPic() {
-    if (data[0].id !== 1) {
-      const prevPic = showPic(data[0].id - 1);
+    if (pic[0].id !== 1) {
+      const prevPic = showPic(pic[0].id - 1);
       setPic(prevPic);
     } else {
       const prevPic = showPic(data.length);
