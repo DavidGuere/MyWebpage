@@ -19,14 +19,14 @@ function App() {
         <Router>
           <NavBar />
           <Switch>
-            <Route path="/" exact>
+            <Route path="/degg" exact>
               <HomePage />
             </Route>
-            <Route path="/Photography">
+            <Route path="/degg/Photography">
               <Photography />
             </Route>
             <Route
-              path="/Gallery/:typeOfPhotography"
+              path="/degg/Gallery/:typeOfPhotography"
               exact
               children={<PhotoPlaceholder />}
             ></Route>

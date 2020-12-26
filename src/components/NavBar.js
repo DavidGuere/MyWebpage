@@ -35,7 +35,7 @@ function NavBar() {
         <div className="navbar-container">
           <Link
             className="navbar-container-item logo"
-            to="/"
+            to="/degg"
             onClick={closeMobilMenu}
           >
             <img
@@ -52,13 +52,13 @@ function NavBar() {
           </div>
           <ul className="navbar-container-item nav-menu">
             <li className="nav-menu-item">
-              <Link to="/" className="nav-links" onClick={closeMobilMenu}>
+              <Link to="/degg" className="nav-links" onClick={closeMobilMenu}>
                 Home
               </Link>
             </li>
             <li className="nav-menu-item">
               <Link
-                to="/Engineering"
+                to="/degg/Engineering"
                 className="nav-links"
                 onClick={closeMobilMenu}
               >
@@ -67,7 +67,7 @@ function NavBar() {
             </li>
             <li className="nav-menu-item">
               <Link
-                to="/Photography"
+                to="/degg/Photography"
                 className="nav-links"
                 onClick={closeMobilMenu}
               >
@@ -78,18 +78,22 @@ function NavBar() {
         </div>
         <ul className={click ? "nav-menu-phone active" : "nav-menu-phone"}>
           <li className="nav-menu-phone-item">
-            <Link to="/" className="nav-links" onClick={closeMobilMenu}>
+            <Link to="/degg" className="nav-links" onClick={closeMobilMenu}>
               Home
             </Link>
           </li>
           <li className="nav-menu-phone-item">
-            <Link to="/about" className="nav-links" onClick={closeMobilMenu}>
+            <Link
+              to="/degg/about"
+              className="nav-links"
+              onClick={closeMobilMenu}
+            >
               About me
             </Link>
           </li>
           <li className="nav-menu-phone-item">
             <Link
-              to="/Photography"
+              to="/degg/Photography"
               className="nav-links"
               onClick={closeMobilMenu}
             >

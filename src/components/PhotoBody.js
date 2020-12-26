@@ -15,8 +15,8 @@ function PhotoBody() {
       </div>
       <div className="photoBody-imageButton people">
         <div className="modal"></div>
-        <Link className="photoBody-link" to="/Gallery/People">
-          <div className="photoBody-text">People</div>
+        <Link className="photoBody-link" to="/degg/Gallery/People">
+          People
         </Link>
       </div>
       <div className="description">
@@ -29,8 +29,8 @@ function PhotoBody() {
       </div>
       <div className="photoBody-imageButton nature">
         <div className="modal"></div>
-        <Link className="photoBody-link" to="/Gallery/Nature">
-          <div className="photoBody-text">Nature</div>
+        <Link className="photoBody-link" to="/degg/Gallery/Nature">
+          Nature
         </Link>
       </div>
       <div className="description">
@@ -43,8 +43,8 @@ function PhotoBody() {
       </div>
       <div className="photoBody-imageButton events">
         <div className="modal"></div>
-        <Link className="photoBody-link" to="/Gallery/Events">
-          <div className="photoBody-text">Events</div>
+        <Link className="photoBody-link" to="/degg/Gallery/Events">
+          Events
         </Link>
       </div>
       <div className="description">
@@ -57,11 +57,10 @@ function PhotoBody() {
       </div>
       <div className="photoBody-imageButton world">
         <div className="modal"></div>
-        <Link className="photoBody-link" to="/Gallery/World">
-          <div className="photoBody-text">World</div>
+        <Link className="photoBody-link" to="/degg/Gallery/World">
+          World
         </Link>
       </div>
-      {/* <div className="photoBody-imageButton"></div> */}
     </div>
   );
 }

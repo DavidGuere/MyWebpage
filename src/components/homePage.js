@@ -48,7 +48,7 @@ function HomePage() {
           text="Engineering"
           videoContainer="videoContainer1"
           video="video1"
-          link="/Engineering"
+          link="/degg/Engineering"
         />
         <ImageButton
           idVidContainer="c2"
@@ -57,7 +57,7 @@ function HomePage() {
           text="Photography"
           videoContainer="videoContainer2"
           video="video2"
-          link="/Photography"
+          link="/degg/Photography"
         />
       </div>
     </React.Fragment>

@@ -26,9 +26,9 @@
   top: 26vw;
   left: 50%;
   font-size: clamp(1em, 5vw, 7em);
-  color: var(--letter3);
+  color: white;
   transform: translate(-50%, -50%);
-  opacity: 50%;
+  opacity: 0.6;
   font-family: "Pinyon Script", cursive;
   letter-spacing: 15px;
   font-weight: 1;
