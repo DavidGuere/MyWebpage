@@ -40,7 +40,7 @@ function NavBar() {
           >
             <img
               id="main_logo"
-              src="https://github.com/DavidGuere/degg/blob/gh-pages/images/GG_logo_blanco.png?raw=true"
+              src="https://github.com/DavidGuere/degg/blob/gh-pages/images/logoblanco.png?raw=true"
               alt="Main logo of page"
             />
           </Link>
