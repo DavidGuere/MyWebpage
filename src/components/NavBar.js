@@ -38,7 +38,11 @@ function NavBar() {
             to="/"
             onClick={closeMobilMenu}
           >
-            <img src="images/GG_logo_blanco.png" alt="" />
+            <img
+              id="main_logo"
+              src="/images/GG_logo_blanco.png"
+              alt="Main logo of page"
+            />
           </Link>
           <div
             className="navbar-container-item menu-icon"
@@ -53,7 +57,11 @@ function NavBar() {
               </Link>
             </li>
             <li className="nav-menu-item">
-              <Link to="/about" className="nav-links" onClick={closeMobilMenu}>
+              <Link
+                to="/Engineering"
+                className="nav-links"
+                onClick={closeMobilMenu}
+              >
                 About me
               </Link>
             </li>

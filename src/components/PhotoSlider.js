@@ -1,35 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./PhotoSlider.css";
-import Card from "./Card";
+import Card2 from "./Card2";
 
-function PhotoSlider() {
-  // Data must be in an array form
-  const photo = require("./data/dataSlider.json");
+function PhotoSlider(prop) {
+  const { id, data, imageID } = prop;
+
+  const [pic, setPic] = useState([]);
 
   // selects only 1 object from the array
   function showPic(arg_id) {
     // picToShow is an array of 1 element (the element is an object): [object]
-    const picToShow = photo.filter((object) => object.id === arg_id);
+    const picToShow = data.filter((object) => object.id === arg_id);
     return picToShow;
   }
 
-  // selecting a random picture to show
-  const randNumber = 1 + Math.floor(Math.random() * photo.length);
-  const [pic, setPic] = useState(showPic(randNumber));
-  console.log(randNumber);
+  useEffect(() => {
+    setPic(() => showPic(id));
+  }, [id]);
 
-  // function prevPic() {
-  //   if (pic[0].id !== 1) {
-  //     const prevPic = showPic(pic[0].id - 1);
-  //     setPic(prevPic);
-  //   } else {
-  //     const prevPic = showPic(photo.length);
-  //     setPic(prevPic);
-  //   }
-  // }
+  console.log(`pic ${pic}`);
+
+  function prevPic() {
+    if (data[0].id !== 1) {
+      const prevPic = showPic(data[0].id - 1);
+      setPic(prevPic);
+    } else {
+      const prevPic = showPic(data.length);
+      setPic(prevPic);
+    }
+  }
 
   function nextPic() {
-    if (pic[0].id !== photo.length) {
+    if (pic[0].id !== data.length) {
       const nextPic = showPic(pic[0].id + 1);
       setPic(nextPic);
     } else {
@@ -38,16 +40,26 @@ function PhotoSlider() {
     }
   }
 
-  // setTimeout(nextPic, 4000);
+  function handleClose() {
+    imageID(null);
+  }
+
+  window.onkeydown = function (event) {
+    if (event.keyCode === 27) {
+      imageID(null);
+    }
+  };
+
   return (
     <React.Fragment>
       <div className="photoSlider">
-        {/* <div className="arrowContainer previous" onClick={prevPic}>
+        <div className="arrowContainer previous" onClick={prevPic}>
           <i class="fas fa-chevron-left arrow"></i>
-        </div> */}
-        <div className="slider">
-          <Card data={pic} />
         </div>
+        <div className="xContainer" onClick={handleClose}>
+          <i class="fas fa-times xSign"></i>
+        </div>
+        <Card2 data={pic} />
         <div className="arrowContainer next" onClick={nextPic}>
           <i class="fas fa-chevron-right arrow"></i>
         </div>

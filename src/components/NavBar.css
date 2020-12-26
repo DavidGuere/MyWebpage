@@ -50,7 +50,7 @@
   transition: all 1s ease;
 }
 
-img {
+#main_logo {
   width: 190px;
   object-fit: cover;
 }

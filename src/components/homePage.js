@@ -48,7 +48,7 @@ function HomePage() {
           text="Engineering"
           videoContainer="videoContainer1"
           video="video1"
-          link="/cv"
+          link="/Engineering"
         />
         <ImageButton
           idVidContainer="c2"

@@ -14,16 +14,16 @@
 }
 
 .photoSlider {
-  position: relative;
-  top: 800px;
-  margin-bottom: 100px;
-  border: 3px solid red;
-  height: 550px;
+  position: absolute;
+  top: 0;
+  z-index: 100000;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 .arrowContainer {
-  position: absolute;
-  border: 2px solid yellow;
+  position: fixed;
+  z-index: 100000000000;
   top: 50%;
   transform: translate(0, -50%);
 }
@@ -31,25 +31,25 @@
 .next {
   right: 0;
 }
-.arrow {
-  transform: scale(4);
-  color: aqua;
+
+.arrow,
+.xSign {
+  transform: scale(3);
+  color: var(--letter1);
   cursor: pointer;
   margin: 1.5em;
+  opacity: 0.2;
 }
 
-.slider > img {
-  border: 2px solid white;
-  max-height: 550px;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
+.arrow:hover,
+.xSign:hover {
+  opacity: 1;
+  transition: all 0.3s ease;
 }
-.videoSlide {
-  position: relative;
-  max-width: 500px;
-  width: 100%;
-  min-height: 500px;
-  height: 100%;
-  border: 2px solid red;
+
+.xContainer {
+  position: fixed;
+  z-index: 100000000000;
+  cursor: pointer;
+  right: 0;
 }
