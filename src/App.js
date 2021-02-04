@@ -11,9 +11,6 @@ import Engineering from "./components/Engineering";
 import Software from "./components/Software";
 
 function App() {
-  useEffect(() => {
-    alert("This page is under development. Watch at your own risk ;)");
-  }, []);
   return (
     <React.Fragment>
       <div id="Wrap">
