@@ -5,7 +5,7 @@ import "./PhotoBody.css";
 function PhotoBody() {
   return (
     <div className="photoBody">
-      <div className="description">
+      <div className="descriptionPhoto">
         <h2 className="description-text">
           The beauty of the different shapes, forms and colors of people.
         </h2>
@@ -16,7 +16,7 @@ function PhotoBody() {
           People
         </Link>
       </div>
-      <div className="description">
+      <div className="descriptionPhoto">
         <h2 className="description-text">
           The beauty of nature. Raw, uncut and uncensored...
         </h2>
@@ -27,7 +27,7 @@ function PhotoBody() {
           Nature
         </Link>
       </div>
-      <div className="description">
+      <div className="descriptionPhoto">
         <h2 className="description-text">Multiple events around the world.</h2>
       </div>
       <div className="photoBody-imageButton events">
@@ -36,7 +36,7 @@ function PhotoBody() {
           Events
         </Link>
       </div>
-      <div className="description">
+      <div className="descriptionPhoto">
         <h2 className="description-text">#MrWorldwide</h2>
       </div>
       <div className="photoBody-imageButton world">

@@ -45,11 +45,11 @@ function NavBar() {
             </li>
             <li className="nav-menu-item">
               <Link
-                to="/degg/Engineering"
+                to="/degg/Software"
                 className="nav-links"
                 onClick={closeMobilMenu}
               >
-                About me
+                Software
               </Link>
             </li>
             <li className="nav-menu-item">
@@ -71,11 +71,11 @@ function NavBar() {
           </li>
           <li className="nav-menu-phone-item">
             <Link
-              to="/degg/about"
+              to="/degg/Software"
               className="nav-links"
               onClick={closeMobilMenu}
             >
-              About me
+              Software
             </Link>
           </li>
           <li className="nav-menu-phone-item">
