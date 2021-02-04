@@ -17,7 +17,7 @@
   top: 70px;
   height: 100vh;
   width: 100%;
-  background-image: url(https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/53320729_2307916852573920_8843470325413838848_o.jpg?_nc_cat=108&cb=846ca55b-311e05c7&ccb=2&_nc_sid=174925&_nc_ohc=qZxzmVyPk5UAX_IWWrc&_nc_ht=scontent-arn2-2.xx&oh=4ca14c2f93e29e1ee2c06f37f7a541b8&oe=6004D243);
+  background-image: url(https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/53320729_2307916852573920_8843470325413838848_o.jpg?_nc_cat=108&ccb=2&_nc_sid=174925&_nc_ohc=gYjXubjSey8AX-tWiz4&_nc_ht=scontent-arn2-2.xx&oh=12135b984163cfd5b882e793dc68aec9&oe=604025C3);
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
@@ -104,10 +104,12 @@
   align-self: center;
   text-align: center;
   font-size: clamp(0.8em, 3vw, 1.2em);
+  padding: 15px;
 }
 
 .picture {
   border-radius: 70px;
+  max-height: 600px;
 }
 
 @media (max-width: 960px) {
@@ -136,5 +138,11 @@
 
   .text {
     transition: all 1s ease;
+  }
+
+  .picture {
+    max-height: 500px;
+    min-height: 280px;
+    transition: all 2s ease;
   }
 }

@@ -7,10 +7,7 @@ function PhotoBody() {
     <div className="photoBody">
       <div className="description">
         <h2 className="description-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut
-          consequuntur illo aliquid recusandae, ipsam modi accusamus fugit
-          incidunt dolor quam eaque alias cumque neque odit obcaecati dolorem
-          unde eveniet?
+          The beauty of the different shapes, forms and colors of people.
         </h2>
       </div>
       <div className="photoBody-imageButton people">
@@ -21,10 +18,7 @@ function PhotoBody() {
       </div>
       <div className="description">
         <h2 className="description-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut
-          consequuntur illo aliquid recusandae, ipsam modi accusamus fugit
-          incidunt dolor quam eaque alias cumque neque odit obcaecati dolorem
-          unde eveniet?
+          The beauty of nature. Raw, uncut and uncensored...
         </h2>
       </div>
       <div className="photoBody-imageButton nature">
@@ -34,12 +28,7 @@ function PhotoBody() {
         </Link>
       </div>
       <div className="description">
-        <h2 className="description-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut
-          consequuntur illo aliquid recusandae, ipsam modi accusamus fugit
-          incidunt dolor quam eaque alias cumque neque odit obcaecati dolorem
-          unde eveniet?
-        </h2>
+        <h2 className="description-text">Multiple events around the world.</h2>
       </div>
       <div className="photoBody-imageButton events">
         <div className="modal"></div>
@@ -48,12 +37,7 @@ function PhotoBody() {
         </Link>
       </div>
       <div className="description">
-        <h2 className="description-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut
-          consequuntur illo aliquid recusandae, ipsam modi accusamus fugit
-          incidunt dolor quam eaque alias cumque neque odit obcaecati dolorem
-          unde eveniet?
-        </h2>
+        <h2 className="description-text">#MrWorldwide</h2>
       </div>
       <div className="photoBody-imageButton world">
         <div className="modal"></div>

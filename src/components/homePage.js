@@ -12,9 +12,8 @@ function HomePage() {
           </div>
           <div className="line"></div>
           <ul className="positions">
-            <li>Energy engineer</li>
             <li>Nuclear engineer</li>
-            <li>Web developer</li>
+            <li>Software developer</li>
             <li>Photographer</li>
           </ul>
         </div>
@@ -23,14 +22,18 @@ function HomePage() {
         <div className="about-container">
           <div className="about-container-item text">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Praesentium, eligendi dignissimos? Aliquid animi voluptate
-              repudiandae alias praesentium deleniti aliquam tenetur, soluta,
-              quisquam illo autem doloribus tempora quasi quia reiciendis vitae.
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
-              aliquam, eius suscipit impedit fugit veniam saepe velit quod
-              nesciunt officiis voluptatem tenetur perspiciatis quasi nisi
-              deleniti ut dicta voluptatum numquam.
+              Creating and exploring, these two things describe me the best. I
+              started with Lego models, then moved to nuclear components, and
+              now here I am, with software programs. And why is software now?
+              After obtaining 3 degrees in nuclear engineering, I still felt
+              that I could push my problem-solving skills a bit further. So,
+              where could create and explore new things at the same time? Yeah,
+              you guessed it, with software. {<br />}
+              {<br />}Besides, learning and exploring new technologies in front
+              of the computer, I also like to explore new places, new cultures,
+              new people, new experiences, whatever it takes to take me out of
+              my comfort zone. And yes, my camera is always with me in my new
+              adventures 😎.
             </p>
           </div>
           <img
@@ -58,6 +61,15 @@ function HomePage() {
           videoContainer="videoContainer2"
           video="video2"
           link="/degg/Photography"
+        />
+        <ImageButton
+          idVidContainer="c3"
+          idVid="v3"
+          src="https://raw.githubusercontent.com/DavidGuere/degg/gh-pages/videos/pc.mp4"
+          text="Software"
+          videoContainer="videoContainer3"
+          video="video3"
+          link="/degg/Software"
         />
       </div>
     </React.Fragment>

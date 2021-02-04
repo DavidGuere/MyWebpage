@@ -15,19 +15,6 @@ function NavBar() {
   function closeMobilMenu() {
     setClick(false);
   }
-  function showButton() {
-    if (window.innerWidth <= 960) {
-      // setButton(false);
-    } else {
-      // setButton(true);
-    }
-  }
-
-  // According to the size of the page, it will show the buttons.
-  window.addEventListener("resize", showButton);
-
-  // Preventing constant rendering.
-  useEffect(() => showButton(), []);
 
   return (
     <React.Fragment>
