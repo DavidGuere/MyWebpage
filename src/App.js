@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Photography from "./components/Photography";
 import PhotoPlaceholder from "./components/PhotoPlaceholder";
 import Engineering from "./components/Engineering";
+import Software from "./components/Software";
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,9 @@ function App() {
               exact
               children={<PhotoPlaceholder />}
             ></Route>
+            <Route path="/degg/Software">
+              <Software />
+            </Route>
             <Route>
               <Engineering />
             </Route>

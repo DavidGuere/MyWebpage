@@ -1,0 +1,28 @@
+:root {
+  --level4: #202020;
+  --level3: #181818;
+  --level2: #0e0e0e;
+  --level1: #0f0f0f;
+  --shadow: #030303;
+  --shadowSize: 2px;
+  --letter3: #ffffff;
+  --letter2: #d8d8d8;
+  --letter1: #929292;
+  --letter0: #343544;
+  --marginSide: 5%;
+  --marginTopBot: 2%;
+}
+
+/* .content {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  margin-left: var(--marginSide);
+  margin-right: var(--marginSide);
+  margin-top: var(--marginTopBot);
+  margin-bottom: var(--marginTopBot);
+  justify-content: space-evenly;
+  background-color: var(--level2);
+  box-shadow: 0px 0px 7px var(--shadowSize) var(--shadow);
+  transition: all 1s ease;
+} */
