@@ -15,17 +15,23 @@ function Footer() {
           <div className="footer-line two"></div>
           <ul className="footer-item ful">
             <li>
-              <a href="https://www.facebook.com/david.gallardoguere/">
+              <a
+                href="https://www.facebook.com/david.gallardoguere/"
+                target="_blank"
+              >
                 <i class="fab fa-facebook footer-icon"></i>
               </a>
             </li>
             <li>
-              <a href="https://hu.linkedin.com/in/david-g%25C3%25BCere-4535aa100">
+              <a
+                href="https://hu.linkedin.com/in/david-g%25C3%25BCere-4535aa100"
+                target="_blank"
+              >
                 <i class="fab fa-linkedin footer-icon"></i>
               </a>
             </li>
             <li>
-              <a href="https://github.com/DavidGuere">
+              <a href="https://github.com/DavidGuere" target="_blank">
                 <i class="fab fa-github footer-icon"></i>
               </a>
             </li>
