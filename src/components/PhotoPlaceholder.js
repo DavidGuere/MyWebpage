@@ -3,6 +3,7 @@ import Card from "./Card";
 import { useParams } from "react-router-dom";
 import "./PhotoPlaceholder.css";
 import PhotoSlider from "./PhotoSlider";
+import axios from "axios";
 
 export const DataContext = React.createContext();
 
@@ -21,6 +22,11 @@ function PhotoPlaceholder() {
   function selectingTypeOfPhotography() {
     if (typeOfPhotography === "People") {
       const typeOfPhotos = require("./data/dataPeople.json");
+      // console.log(typeOfPhotos[0]);
+      // axios
+      //   .get(`http://localhost:8080/api/v1/download/server/People`)
+      //   .then((response) => console.log(JSON.parse(response.data[0])));
+
       return typeOfPhotos;
     } else if (typeOfPhotography === "Nature") {
       const typeOfPhotos = require("./data/dataNature.json");
